@@ -7,7 +7,7 @@ import ApolloClient, { createNetworkInterface } from 'apollo-client'
 
 // Auth
 import { login } from './githubLogin'
-import { username, password } from './config'
+import { username, password } from './configs'
 
 // App.Components
 import Repository from './components/repository'
