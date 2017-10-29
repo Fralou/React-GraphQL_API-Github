@@ -1,0 +1,52 @@
+body {
+  margin: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.cols {
+  text-align: center;
+}
+
+.repositorydiv, .issue, .comments {
+  border: 1px solid darkgrey;
+  margin: 5px;
+  background-color: darkgrey;
+}
+
+.issue, .comments {
+  margin-bottom: 20px;
+}
+
+.repository, .issuetitle, .issuestate, .issuebodytext, .commentscreatedat, .commentsbodytext {
+  border: 1px solid darkgrey;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
+  overflow: auto;
+  }
+
+.commentscreatedat {
+  text-align: right;
+}
+
+.commentsbodytext {
+  text-align: left;
+}
+
+.repository:hover, .issuetitle:hover, .issuestate:hover, .issuebodytext:hover, .commentscreatedat:hover, .commentsbodytext:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+.githublogin {
+  text-align: center;
+  margin-left: 20px;
+  border: 5px solid darkgrey;
+  overflow: visible;
+  }
+
+.search {
+  margin-left: 10px;
+  margin: 5px;
+}
