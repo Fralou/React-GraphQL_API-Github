@@ -41,45 +41,6 @@ query GetRepositoryIssues($login: String!) {
 
 `;
 
-// repos
-//
-// query GetRepositoryIssues($login: String!) {
-//    repositoryOwner(login: $login) {
-//      repositories(first: 100) {
-//        edges {
-//          node {
-//            name
-//          }
-//        }
-//      }
-//    }
-//  }
-
-
-// get all issues of current repository with required data
-//
-// query GetRepositoryIssues($login: String!) {
-//   repositoryOwner(login: $login) {
-//     repositories(first: 2) {
-//       edges {
-//         node {
-//           name
-//           issues(first:2){
-//             edges{
-//               node{
-//                 title
-//                 state
-//                 bodyText
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 const withInfo = graphql(GetRepositoryInfoQuery, {
   options: ({ login }) => {
     return {
